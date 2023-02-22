@@ -5,16 +5,18 @@ Description: This theme is a best responsive web template. It would be great for
 License: Free to use for personal and commercial, but you need to place back link in the bottom of the template.
 */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,900,500);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap);
+
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', 'sans-serif', arial;
+    font-family: 'Source Sans Pro' , 'sans-serif', arial;
 }
 
 body {
-    font-size: 14px;
-    font-family: 'Roboto', 'sans-serif';
+    font-size: 16px;
+    font-family: 'Source Sans Pro' , 'sans-serif';
     -webkit-font-smoothing: antialiased;
     background: #fff;
     margin-top: 60px;
