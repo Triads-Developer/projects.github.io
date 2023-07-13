@@ -3,15 +3,19 @@ Theme Name: Sky Touch
 Author URI: http://webthemez.com/
 Description: This theme is a best responsive web template. It would be great for a corporate websites, business websites, personal blog.
 License: Free to use for personal and commercial, but you need to place back link in the bottom of the template.
+    --gray-dark: #0D0201;
 */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,900,500);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap);
 
 :root {
-    --graydark: #0D0201;
+    --gray-dark: #0D0201;
+    --gray-light: #eeeeee;
     --gray-extra-light: #eeeeee;
-    --blue: #2b8282;
+    --turquoise: #2b8282;
     --green: #0780A2;
+    --dark-blue:  #1371AF;
+    --white: #fff;
 }
 
 * {
@@ -21,7 +25,7 @@ License: Free to use for personal and commercial, but you need to place back lin
 }
 
 .p-light-background {
-    color: var(--graydark);
+    color: var(--gray-dark);
 }
 
 address { 
@@ -32,18 +36,18 @@ body {
     font-size: 16px;
     font-family: 'Source Sans Pro' , 'sans-serif';
     -webkit-font-smoothing: antialiased;
-    background: #fff;
+    background: var(--white);
     margin-top: 60px;
 }
 
 ::selection {
-    color: #fff;
-    background: #1371AF;
+    color: var(--white);
+    background:var(--dark-blue);
 }
 
 ::-moz-selection {
-    color: #fff;
-    background: #1371AF;
+    color: var(--white);
+    background:var(--dark-blue);
 }
 
 p {
@@ -69,9 +73,9 @@ h3 {
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
-    color: #fff;
+    color: var(--white);
     padding: 10px 25px;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     border-radius: 0px;
     font-size: 16px;
     font-weight: 400;
@@ -79,7 +83,7 @@ h3 {
 }
 
     .button-outline:hover {
-        color: #fff;
+        color: var(--white);
         background: rgba(255,255,255,0.35);
     }
 
@@ -105,7 +109,7 @@ a {
     }
 
     a:focus {
-        color: #c8c8c8;
+        color: var(--grey-light);
     }
 
 .btn {
@@ -118,7 +122,7 @@ a {
     }
 
 .btn-primary {
-    background: #c8c8c8;
+    background: var(--grey-light);
 }
 
 .form-control {
@@ -147,14 +151,14 @@ a {
 }
 
 .tray {
-    border: 1px solid #1371AF;
+    border: 1px solidvar(--dark-blue);
     padding: 12px;
     margin-bottom: 15px;
     border-radius: 10px;
 }
 
     .tray .fa {
-        color: #1371AF;
+        color:var(--dark-blue);
         display: block;
         text-align: center;
         font-size: 3em;
@@ -172,7 +176,7 @@ a {
     z-index: 10;
     border-radius: 0;
     /*  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border-top: 2px solid #1371AF;*/
+    border-top: 2px solidvar(--dark-blue);*/
 }
 
     .header .navbar-brand {
@@ -180,24 +184,24 @@ a {
     }
 
 .navbar-inverse .navbar-toggle {
-    border-color: var(--blue);
+    border-color: var(--turquoise);
     background-color: #ffcc00;
 }
 
     .navbar-inverse .navbar-toggle .icon-bar {
-        /*background-color: #1371AF;*/
+        /*background-color:var(--dark-blue);*/
     }
 
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-        background: var(--blue);
+        background: var(--turquoise);
     }
 
         .navbar-inverse .navbar-toggle:hover .icon-bar {
-            background: #fff;
+            background: var(--white);
         }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: var(--blue);
+    color: var(--turquoise);
 }
 
 .navbar-toggle {
@@ -213,7 +217,7 @@ a {
 }
 
 .navbar-brand b {
-    color: var(--blue);
+    color: var(--turquoise);
 }
 
 .logo {
@@ -232,7 +236,7 @@ a {
 
 .header .navbar {
     margin: 0;
-    background: #fff;
+    background: var(--white);
     border: 0;
 }
 
@@ -242,12 +246,12 @@ a {
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: var(--blue);
+    color: var(--turquoise);
     background: none;
 }
 
 .navbar-nav > li:hover, .navbar-nav > li a:hover {
-    color: var(--blue);
+    color: var(--turquoise);
 }
 
 .header .navbar-nav > li > a {
@@ -268,7 +272,7 @@ a {
         font-size: 3.5em;
         margin: 90px 0 30px;
         line-height: 1.2em;
-        color: var(--blue);
+        color: var(--turquoise);
     }
 
     .page-section p {
@@ -276,7 +280,7 @@ a {
         }
 
     .page-section h2 {
-        color: var(--blue);
+        color: var(--turquoise);
     }
 
     .page-section p {
@@ -285,7 +289,7 @@ a {
     }
 
 .darkBg {
-    background: var(--graydark);
+    background: var(--gray-dark);
 }
 
     .darkBg h2 {
@@ -362,7 +366,7 @@ a {
 }
 
     .banner-content h2 {
-        color: #fff;
+        color: var(--white);
         font-size: 3.5em;
         margin: 2% 0 30px;
         line-height: 1.2em;
@@ -401,7 +405,7 @@ a {
 /* Services
     -------------------------------------------------*/
 .media-heading {
-    color: #fff;
+    color: var(--white);
 }
 /* Team
     ---------------------------------------------------*/
@@ -430,7 +434,7 @@ a {
 
     .team-member .pos {
         display: block;
-        color: #fff;
+        color: var(--white);
         margin: 0 0 0 15px;
         /*text-align:center;*/
     }
@@ -473,13 +477,13 @@ nav#filter {
     nav#filter a {
         padding: 4px 12px;
         line-height: 20px;
-        border: 1px solid #c8c8c8;
+        border: 1px solid var(--grey-light);
         text-decoration: none;
     }
 
 .current {
-    background: var(--blue);
-    color: #fff;
+    background: var(--turquoise);
+    color: var(--white);
 }
 
 .portfolio-items article img {
@@ -526,7 +530,7 @@ nav#filter {
 }
 
 .portfolio-item .portfolio-desc a {
-    color: #fff;
+    color: var(--white);
     text-align: center;
     display: block;
 }
@@ -561,7 +565,7 @@ nav#filter {
 }
 
 .portfolio-item .portfolio-desc .folio-info p {
-    color: #ffffff;
+    color: var(--white)fff;
     font-size: 12px;
 }
 
@@ -571,18 +575,18 @@ nav#filter {
 
 .btn-dark {
     background: #444;
-    color: #fff;
+    color: var(--white);
 }
 
     .btn-dark:hover {
         background: #000;
-        color: #fff;
+        color: var(--white);
     }
 
 .back-to-top {
     display: inline-block;
     clear: both;
-    background: #fff;
+    background: var(--white);
     color: #333;
     padding: 0 10px 5px;
     margin: 20px 0 0;
@@ -591,7 +595,7 @@ nav#filter {
 
     .back-to-top:hover {
         background: #333;
-        color: #fff;
+        color: var(--white);
         text-decoration: none;
     }
 
@@ -611,7 +615,7 @@ body {
     margin: 0;
     padding: 0;
     width: 200px;
-    background: #ffffff;
+    background: var(--white)fff;
     box-shadow: 0 10px 10px -10px #000000;
 }
 
@@ -664,7 +668,7 @@ footer {
     padding-top: 20px;
 }
     footer a {
-        color: blue;
+        color: turquoise;
     }
 
     footer ul li {
@@ -680,7 +684,7 @@ footer {
     }
 
 .addBg {
-    background: #fff !important;
+    background: var(--white) !important;
     -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
     -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
     box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
@@ -710,11 +714,11 @@ footer {
     }
 
     .navbar-header {
-        background: #fff;
+        background: var(--white);
     }
 
     #main-nav {
-        background: #fff !important;
+        background: var(--white) !important;
         -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
         -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
         box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
