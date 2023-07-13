@@ -7,11 +7,25 @@ License: Free to use for personal and commercial, but you need to place back lin
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,900,500);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap);
 
+:root {
+    --graydark: #0D0201;
+    --gray-extra-light: #eeeeee;
+    --blue: #2b8282;
+    --green: #0780A2;
+}
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro' , 'sans-serif', arial;
+}
+
+.p-light-background {
+    color: var(--graydark);
+}
+
+address { 
+    color: var(--gray-extra-light);
 }
 
 body {
@@ -33,7 +47,7 @@ body {
 }
 
 p {
-    color: #858585;
+    color: var(--gray-extra-light);
 }
 
 .pDark p {
@@ -69,8 +83,12 @@ h3 {
         background: rgba(255,255,255,0.35);
     }
 
+.contactUsLink {
+    color: #5864FA;
+}
+
 a {
-    color: #1371AF;
+    color: var(--darkgray);
     text-decoration: none;
     text-shadow: none;
     -webkit-transition: all 0.2s linear;
@@ -81,8 +99,13 @@ a {
 }
 
     a:hover {
-        color: #2593DB;
+        color: #5864FA ;
+        background: #eeeeee;
         text-decoration: none;
+    }
+
+    a:focus {
+        color: #c8c8c8;
     }
 
 .btn {
@@ -95,7 +118,7 @@ a {
     }
 
 .btn-primary {
-    background: #1371AF;
+    background: #c8c8c8;
 }
 
 .form-control {
@@ -157,8 +180,8 @@ a {
     }
 
 .navbar-inverse .navbar-toggle {
-    border-color: #1371AF;
-    background-color: #1371AF;
+    border-color: var(--blue);
+    background-color: #ffcc00;
 }
 
     .navbar-inverse .navbar-toggle .icon-bar {
@@ -166,7 +189,7 @@ a {
     }
 
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-        background: #1371AF;
+        background: var(--blue);
     }
 
         .navbar-inverse .navbar-toggle:hover .icon-bar {
@@ -174,7 +197,7 @@ a {
         }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #1371AF;
+    color: var(--blue);
 }
 
 .navbar-toggle {
@@ -185,11 +208,12 @@ a {
     padding: 16px 15px;
     line-height: 18px;
     height: 50px;
+    color: #b85323;
     /*color:#1371AF;*/
 }
 
 .navbar-brand b {
-    color: #1371AF;
+    color: var(--blue);
 }
 
 .logo {
@@ -218,12 +242,12 @@ a {
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #1371AF;
+    color: var(--blue);
     background: none;
 }
 
 .navbar-nav > li:hover, .navbar-nav > li a:hover {
-    color: #1371AF;
+    color: var(--blue);
 }
 
 .header .navbar-nav > li > a {
@@ -244,14 +268,15 @@ a {
         font-size: 3.5em;
         margin: 90px 0 30px;
         line-height: 1.2em;
+        color: var(--blue);
     }
 
-        .page-section h1 span {
+    .page-section p {
             font-weight: 200;
         }
 
     .page-section h2 {
-        color: #1371AF;
+        color: var(--blue);
     }
 
     .page-section p {
@@ -260,14 +285,14 @@ a {
     }
 
 .darkBg {
-    background: #2d3538;
+    background: var(--graydark);
 }
 
     .darkBg h2 {
     }
 
     .darkBg h3 {
-        color: #CACACA;
+        color: #FEFEFE;
     }
 
     .darkBg .media {
@@ -346,7 +371,7 @@ a {
     .banner-content p {
         font-size: 1.9em;
         font-weight: normal;
-        color: #B9B9B9;
+        color: var(--darkgray);
     }
 
 .sub-heading {
@@ -448,12 +473,12 @@ nav#filter {
     nav#filter a {
         padding: 4px 12px;
         line-height: 20px;
-        border: 1px solid #1371AF;
+        border: 1px solid #c8c8c8;
         text-decoration: none;
     }
 
 .current {
-    background: #1371AF;
+    background: var(--blue);
     color: #fff;
 }
 
@@ -634,10 +659,13 @@ body {
 
 footer {
     background-color: #242424;
-    color: #8e8e8e;
+    color: var(--darkgray);
     font-size: 14px;
     padding-top: 20px;
 }
+    footer a {
+        color: blue;
+    }
 
     footer ul li {
         list-style: none;
