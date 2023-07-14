@@ -7,6 +7,15 @@ License: Free to use for personal and commercial, but you need to place back lin
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,900,500);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap);
 
+:root {
+    --gray-dark: #0D0201;
+    --gray-light: #eeeeee;
+    --gray-extra-light: #eeeeee;
+    --turquoise: #2b8282;
+    --green: #0780A2;
+    --dark-blue:  #1371AF;
+    --white: #fff;
+}
 
 * {
     margin: 0;
@@ -14,26 +23,34 @@ License: Free to use for personal and commercial, but you need to place back lin
     font-family: 'Source Sans Pro' , 'sans-serif', arial;
 }
 
+.p-light-background {
+    color: var(--gray-dark);
+}
+
+address { 
+    color: var(--gray-extra-light);
+}
+
 body {
     font-size: 16px;
     font-family: 'Source Sans Pro' , 'sans-serif';
     -webkit-font-smoothing: antialiased;
-    background: #fff;
+    background: var(--white);
     margin-top: 60px;
 }
 
 ::selection {
-    color: #fff;
-    background: #1371AF;
+    color: var(--white);
+    background:var(--dark-blue);
 }
 
 ::-moz-selection {
-    color: #fff;
-    background: #1371AF;
+    color: var(--white);
+    background:var(--dark-blue);
 }
 
 p {
-    color: #858585;
+    color: var(--gray-extra-light);
 }
 
 .pDark p {
@@ -55,9 +72,9 @@ h3 {
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
-    color: #fff;
+    color: var(--white);
     padding: 10px 25px;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     border-radius: 0px;
     font-size: 16px;
     font-weight: 400;
@@ -65,12 +82,16 @@ h3 {
 }
 
     .button-outline:hover {
-        color: #fff;
+        color: var(--white);
         background: rgba(255,255,255,0.35);
     }
 
+.contactUsLink {
+    color: #5864FA;
+}
+
 a {
-    color: #1371AF;
+    color: var(--darkgray);
     text-decoration: none;
     text-shadow: none;
     -webkit-transition: all 0.2s linear;
@@ -81,8 +102,13 @@ a {
 }
 
     a:hover {
-        color: #2593DB;
+        color: #5864FA ;
+        background: #eeeeee;
         text-decoration: none;
+    }
+
+    a:focus {
+        color: var(--grey-light);
     }
 
 .btn {
@@ -95,7 +121,7 @@ a {
     }
 
 .btn-primary {
-    background: #1371AF;
+    background: var(--grey-light);
 }
 
 .form-control {
@@ -124,14 +150,14 @@ a {
 }
 
 .tray {
-    border: 1px solid #1371AF;
+    border: 1px solidvar(--dark-blue);
     padding: 12px;
     margin-bottom: 15px;
     border-radius: 10px;
 }
 
     .tray .fa {
-        color: #1371AF;
+        color:var(--dark-blue);
         display: block;
         text-align: center;
         font-size: 3em;
@@ -149,7 +175,7 @@ a {
     z-index: 10;
     border-radius: 0;
     /*  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border-top: 2px solid #1371AF;*/
+    border-top: 2px solidvar(--dark-blue);*/
 }
 
     .header .navbar-brand {
@@ -157,24 +183,24 @@ a {
     }
 
 .navbar-inverse .navbar-toggle {
-    border-color: #1371AF;
-    background-color: #1371AF;
+    border-color: var(--turquoise);
+    background-color: #ffcc00;
 }
 
     .navbar-inverse .navbar-toggle .icon-bar {
-        /*background-color: #1371AF;*/
+        /*background-color:var(--dark-blue);*/
     }
 
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-        background: #1371AF;
+        background: var(--turquoise);
     }
 
         .navbar-inverse .navbar-toggle:hover .icon-bar {
-            background: #fff;
+            background: var(--white);
         }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #1371AF;
+    color: var(--turquoise);
 }
 
 .navbar-toggle {
@@ -185,11 +211,12 @@ a {
     padding: 16px 15px;
     line-height: 18px;
     height: 50px;
+    color: #b85323;
     /*color:#1371AF;*/
 }
 
 .navbar-brand b {
-    color: #1371AF;
+    color: var(--turquoise);
 }
 
 .logo {
@@ -208,7 +235,7 @@ a {
 
 .header .navbar {
     margin: 0;
-    background: #fff;
+    background: var(--white);
     border: 0;
 }
 
@@ -218,12 +245,12 @@ a {
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #1371AF;
+    color: var(--turquoise);
     background: none;
 }
 
 .navbar-nav > li:hover, .navbar-nav > li a:hover {
-    color: #1371AF;
+    color: var(--turquoise);
 }
 
 .header .navbar-nav > li > a {
@@ -244,14 +271,15 @@ a {
         font-size: 3.5em;
         margin: 90px 0 30px;
         line-height: 1.2em;
+        color: var(--turquoise);
     }
 
-        .page-section h1 span {
+    .page-section p {
             font-weight: 200;
         }
 
     .page-section h2 {
-        color: #1371AF;
+        color: var(--turquoise);
     }
 
     .page-section p {
@@ -260,14 +288,14 @@ a {
     }
 
 .darkBg {
-    background: #2d3538;
+    background: var(--gray-dark);
 }
 
     .darkBg h2 {
     }
 
     .darkBg h3 {
-        color: #CACACA;
+        color: #FEFEFE;
     }
 
     .darkBg .media {
@@ -314,7 +342,7 @@ a {
     padding: 0px;
     box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
     max-height: 600px;
-    height: 600px;
+    height: fit;
     background: #0d1836 url("../images/banner-bg.jpg") left bottom no-repeat;
     background-size: 100% 100%;
     background-size: cover;
@@ -337,7 +365,7 @@ a {
 }
 
     .banner-content h2 {
-        color: #fff;
+        color: var(--white);
         font-size: 3.5em;
         margin: 2% 0 30px;
         line-height: 1.2em;
@@ -346,7 +374,7 @@ a {
     .banner-content p {
         font-size: 1.9em;
         font-weight: normal;
-        color: #B9B9B9;
+        color: var(--darkgray);
     }
 
 .sub-heading {
@@ -376,7 +404,7 @@ a {
 /* Services
     -------------------------------------------------*/
 .media-heading {
-    color: #fff;
+    color: var(--white);
 }
 /* Team
     ---------------------------------------------------*/
@@ -405,7 +433,7 @@ a {
 
     .team-member .pos {
         display: block;
-        color: #fff;
+        color: var(--white);
         margin: 0 0 0 15px;
         /*text-align:center;*/
     }
@@ -448,13 +476,13 @@ nav#filter {
     nav#filter a {
         padding: 4px 12px;
         line-height: 20px;
-        border: 1px solid #1371AF;
+        border: 1px solid var(--grey-light);
         text-decoration: none;
     }
 
 .current {
-    background: #1371AF;
-    color: #fff;
+    background: var(--turquoise);
+    color: var(--white);
 }
 
 .portfolio-items article img {
@@ -501,7 +529,7 @@ nav#filter {
 }
 
 .portfolio-item .portfolio-desc a {
-    color: #fff;
+    color: var(--white);
     text-align: center;
     display: block;
 }
@@ -536,7 +564,7 @@ nav#filter {
 }
 
 .portfolio-item .portfolio-desc .folio-info p {
-    color: #ffffff;
+    color: var(--white)fff;
     font-size: 12px;
 }
 
@@ -546,18 +574,18 @@ nav#filter {
 
 .btn-dark {
     background: #444;
-    color: #fff;
+    color: var(--white);
 }
 
     .btn-dark:hover {
         background: #000;
-        color: #fff;
+        color: var(--white);
     }
 
 .back-to-top {
     display: inline-block;
     clear: both;
-    background: #fff;
+    background: var(--white);
     color: #333;
     padding: 0 10px 5px;
     margin: 20px 0 0;
@@ -566,7 +594,7 @@ nav#filter {
 
     .back-to-top:hover {
         background: #333;
-        color: #fff;
+        color: var(--white);
         text-decoration: none;
     }
 
@@ -586,7 +614,7 @@ body {
     margin: 0;
     padding: 0;
     width: 200px;
-    background: #ffffff;
+    background: var(--white)fff;
     box-shadow: 0 10px 10px -10px #000000;
 }
 
@@ -634,10 +662,13 @@ body {
 
 footer {
     background-color: #242424;
-    color: #8e8e8e;
+    color: var(--darkgray);
     font-size: 14px;
     padding-top: 20px;
 }
+    footer a {
+        color: turquoise;
+    }
 
     footer ul li {
         list-style: none;
@@ -652,7 +683,7 @@ footer {
     }
 
 .addBg {
-    background: #fff !important;
+    background: var(--white) !important;
     -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
     -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
     box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
@@ -682,11 +713,11 @@ footer {
     }
 
     .navbar-header {
-        background: #fff;
+        background: var(--white);
     }
 
     #main-nav {
-        background: #fff !important;
+        background: var(--white) !important;
         -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
         -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
         box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
